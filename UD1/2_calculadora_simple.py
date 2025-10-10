@@ -1,6 +1,6 @@
 
 num1 = float(input("Pon tu primer número: "))
-operator = input("Elige que operador vas a usar (+, -, *, /, %): ")
+operator = input("Elige que operador vas a usar (+, -, *, /, %, **): ")
 num2 = float(input("Pon tu segundo número"))
 
 if operator == "+":
@@ -9,6 +9,8 @@ elif operator == "-":
     result = num1 - num2
 elif operator == "*":
     result = num1 * num2
+elif operator == "**":
+    result = num1 ** num2
 elif operator == "%":
         result = num1 % num2
 elif operator == "/":
