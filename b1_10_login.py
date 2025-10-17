@@ -1,9 +1,6 @@
 save_user = []
 save_password = []
 
-# Caracteres especiales permitidos solo para contraseña
-special_char = ('*', '+', '-', '/', '_', '?', '!', '[', '{', '(', ')', '}', ']', ',', ';', '>', '<', '~', '°', '^', '&', '$', '#', '"', '@')
-
 option = ""
 
 while option != "3":
@@ -12,7 +9,6 @@ while option != "3":
                    "2) Iniciar sesión\n"
                    "3) Salir\n"
                    "Seleccione una opción: ")
-
 
     # OPCIÓN 1: REGISTRARSE
 
@@ -27,7 +23,8 @@ while option != "3":
                     "@" not in user or
                     not (user.endswith(".com") or user.endswith(".es") or user.endswith(".net")) or
                     any(c in "!#$%&*?;:/<>^{}[]" for c in user)):  # símbolos prohibidos
-                print("El email debe tener mínimo 3 caracteres, contener '@', acabar en (.com, .es, .net) y no tener símbolos especiales.")
+                print(
+                    "El email debe tener mínimo 3 caracteres, contener '@', acabar en (.com, .es, .net) y no tener símbolos especiales.")
                 continue
 
             if user in save_user:
@@ -44,7 +41,8 @@ while option != "3":
                     not any(c.isupper() for c in password) or
                     not any(c.isdigit() for c in password) or
                     not any(c in "!@#$%&*?;" for c in password)):
-                print("La contraseña debe tener mínimo 8 caracteres, una mayúscula, un número y un símbolo especial (!@#$%&*?;).")
+                print(
+                    "La contraseña debe tener mínimo 8 caracteres, una mayúscula, un número y un símbolo especial (!@#$%&*?;).")
                 continue
             break
 
@@ -91,7 +89,8 @@ while option != "3":
                     print("Has iniciado sesón correctamente")
                 break
             else:
-                print(f"El usuario '{login_user}' no está registrado. Intenta nuevamente o escribe 'salir' para volver.\n")
+                print(
+                    f"El usuario '{login_user}' no está registrado. Intenta nuevamente o escribe 'salir' para volver.\n")
 
     # OPCIÓN 3: SALIR
 
