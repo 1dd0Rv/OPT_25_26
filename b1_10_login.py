@@ -28,7 +28,7 @@ while option != "3":
                 continue
 
             if user in save_user:
-                print("⚠️ Ese usuario ya está registrado. Intenta con otro.")
+                print("Ese usuario ya está registrado. Intenta con otro.")
                 continue
 
             break
@@ -49,7 +49,7 @@ while option != "3":
         # Guardar usuario y contraseña
         save_user.append(user)
         save_password.append(password)
-        print(f"\n✅ {user} se ha registrado correctamente.\n")
+        print(f"\n{user} se ha registrado correctamente.\n")
 
 
     # OPCIÓN 2: INICIAR SESIÓN
@@ -97,4 +97,4 @@ while option != "3":
     elif option == "3":
         print("\n👋 Saliendo del programa... ¡Hasta luego!\n")
     else:
-        print("⚠️ Opción no válida. Intente nuevamente.\n")
+        print("️ Opción no válida. Intente nuevamente.\n")
