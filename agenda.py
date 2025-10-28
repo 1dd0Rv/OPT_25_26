@@ -1,18 +1,30 @@
+"""
+Programa de gestion de contactos.
+
+Este programa pide al usuario 3 contactos que los guardara en una agenda creada anteriormenete.
+Cada contacto tiene un nombre(Clave) y un telefono(Valor)
+Después de meter el contacto se muestra la agenda completa
+al final del programa se le da la opcion al usuario de buscar un contacto que se haya guardado anteriormete en la agenda
+
+
+"""
+
+# Creamos un diccionario vacio en el que meteremos los contactos
 agenda = {}
-contactos = 3
+contactos = 0
 
 print(f"\nIntroduce {contactos} contactos para la agenda\n")
 
 # Bucle principal para introducir los 3 contactos
-for i in range(contactos):
-    while True:
-        nombre = input(f"Introduce el nombre de tu contacto {i + 1}: ")
-        if len(nombre) > 2:
-            break
+while contactos < 3:
+    nombre = input(f"Introduce el nombre de tu contacto {contactos + 1}: ")
+    if len(nombre) <= 2:
         print(" El nombre debe tener más de dos caracteres.\n")
+        continue
 
     # Bucle para validar el teléfono
     while True:
+
         telefono = input(f"Introduce el número de teléfono de {nombre}: ")
         if telefono.isdigit() and len(telefono) > 5:
             break
@@ -20,10 +32,12 @@ for i in range(contactos):
 
     # Guardamo el nombre con su valor que sera el telefono
     agenda[nombre] = telefono
+    contactos += 1
     print(f"El contacto '{nombre}' se ha guardado correctamente.\n")
 
 print("--- Agenda completa ---")
-print(agenda)
+for nombre, telefono in agenda.items():
+    print(f"Nombre: {nombre}, Telefono: {telefono}")
 
 buscar_contacto = input("¿Que contacto quieres buscar?: ")
 
