@@ -15,11 +15,11 @@
 
 ---
 
-## Funciones, listas y diccionarios.
+### Funciones, listas y diccionarios.
 
 - Actividades de la [UD2](https://github.com/1dd0Rv/OPT_25_26/tree/feature/bloque02/UD2)
 
-## Conocimientos adquiridos.
+#### Conocimientos adquiridos.
 
 - Uso de tuplas, listas y diccionarios
 - Definir funciones
