@@ -1,26 +1,31 @@
-### Variables, bucles y condicionales.
+# 📚 OPT_25_26 - [Optativa]
 
- -  Actividades de la [UD1](https://github.com/1dd0Rv/OPT_25_26/tree/feature/bloque01/UD1)
- -  [Login](https://github.com/1dd0Rv/OPT_25_26/blob/feature/bloque01_final/b1_10_login.py) con sus respectivas propuestas para un buen funcionamiento
+> **Curso Académico:** 2025 - 2026  
+> **Instituto:** [I.E.S La Marisma]  
+> **FP Superior:** [Administración de Sistemas informáticos en Red]
 
-#### Conocimientos adquiridos.
+![Status](https://img.shields.io/badge/Status-En%20Desarrollo-yellow)
+![Language](https://img.shields.io/badge/Language-Python%20%7C%20C%2B%2B-blue) 
 
-- Variables para guardar datos
-- Bucles for para recorer listas y rangos
-- if para controlar el flujo de la opciones del programa y variables
-- Conversión de datos
-- Datos booleanos
-- Operadores lógicos
-- Docstrings
+## 📋 Descripción
 
----
+Este repositorio contiene el material, prácticas y proyectos desarrollados para la asignatura **[Optativa Python] (OPT)** durante el curso 2025/2026.
 
-### Funciones, listas y diccionarios.
+El objetivo principal es documentar el progreso y almacenar el código fuente relacionado con:
+* [Tema o Práctica 1]
+* [Tema o Práctica 2]
+* [Proyecto Final]
 
-- Actividades de la [UD2](https://github.com/1dd0Rv/OPT_25_26/tree/feature/bloque02/UD2)
+## 🗂️ Estructura del Repositorio
 
-#### Conocimientos adquiridos.
+El repositorio está organizado de la siguiente manera:
 
-- Uso de tuplas, listas y diccionarios
-- Definir funciones
-- Funciones del sistema para operar con listas
+```text
+OPT_25_26/
+├── 📂 docs/              # Documentación y enunciados de prácticas
+├── 📂 src/               # Código fuente principal
+│   ├── 📂 practica_1/    # https://github.com/1dd0Rv/OPT_25_26/tree/feature/bloque01/UD1
+│   └── 📂 practica_2/    # Código de la Práctica 2
+├── 📂 data/              # Datasets o archivos de entrada (si aplica)
+├── 📄 .gitignore         # Archivos ignorados por Git
+└── 📄 README.md          # Este archivo
