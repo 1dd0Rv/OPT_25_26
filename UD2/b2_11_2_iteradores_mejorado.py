@@ -39,7 +39,20 @@ it = iter(estudiantes)
 
 while True:
     try:
-        elemento = next(it)
-        print(it)
+        # Obtiene la siguiente clave (nombre del estudiante) del iterador
+        estudiante_nombre = next(it)
+
+        notas_estudiante = estudiantes[estudiante_nombre]
+        promedio_final = promedio(notas_estudiante)
+
+        estado = estado_notas(promedio_final)
+
+        print(f"[!] Estudiante: {estudiante_nombre}")
+        print(f"   - Notas: {notas_estudiante}")
+        print(f"   - Promedio: {promedio_final:.2f}")
+        print(f"   - Estado: **{estado}**")
+        print("-" * 30) # Separador entre estudiantes
+
     except StopIteration:
+
         break
