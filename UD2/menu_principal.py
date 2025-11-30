@@ -9,6 +9,6 @@ print("2. Configuracion")
 print("3. Salir")
 print("===========================\n")
 
-if __name__ == "__main__":
-    mostar_menu()
-    mostar_menu()
+
+mostar_menu()
+mostar_menu()
